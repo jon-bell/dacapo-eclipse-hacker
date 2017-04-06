@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+  <classpathentry kind="src" path="src/main/java" including="**/*.java"/>
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+  <classpathentry kind="var" path="M2_REPO/org/ow2/asm/asm-all/5.0.4/asm-all-5.0.4.jar" sourcepath="M2_REPO/org/ow2/asm/asm-all/5.0.4/asm-all-5.0.4-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/jon/.m2/repository/org/ow2/asm/asm-all/5.0.4/asm-all-5.0.4-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+</classpath>
