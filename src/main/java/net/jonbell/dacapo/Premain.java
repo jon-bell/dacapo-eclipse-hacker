@@ -40,7 +40,7 @@ public class Premain {
 
 			@Override
 			public byte[] transform(ClassLoader loader, String className, Class<?> classBeingRedefined, ProtectionDomain protectionDomain, byte[] classfileBuffer) throws IllegalClassFormatException {
-				if(className != null || !className.startsWith("org/eclipse"))
+				if(className == null || !className.startsWith("org/eclipse"))
 					return null;
 				ClassWriter cw = new ClassWriter(ClassWriter.COMPUTE_MAXS);
 				ClassVisitor cv = new ClassVisitor(Opcodes.ASM5, cw) {
