@@ -114,7 +114,7 @@ I have no idea why, but this is some problem in the Eclipse libraries and it ret
 
 The obvious (after much headbanging) answer is just to force it to return the path to the java 7 `rt.jar`. Which we can do without recompiling DaCapo by just rewriting the method. So, that's what this does.
 
-Compile and run this javaagent (and add it to the classpath) of DaCapo when you run it, and pass `-Declipse.java.home=...` to a valid java 7 directory (to the directory of the JRE). Copy your tzdb.dat file from $JAVA_HOME/lib/ to the java 7 home/lib folder first.
+Compile and run this javaagent (and add it to the classpath) of DaCapo when you run it, and pass `-Declipse.java.home=...` to a valid java 7 directory (to the directory of the JRE). Copy your tzdb.dat file from $JAVA_HOME/lib/ to the java 7 home/lib folder first. *This anecdotally seems to only work with an OpenJDK Java 7 VM on Ubuntu, but is OK with Oracle on Mac*
 
 
 Example:
